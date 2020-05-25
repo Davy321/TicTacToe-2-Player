@@ -20,7 +20,6 @@ function boxClick(e){
 		document.getElementById("endMessage").innerHTML = "Player " + playerTurn + " Wins!";
 		document.getElementById("lightBox").style.display = "block";
 		document.getElementById("winScreen").style.display = "block";
-		playerTurn = 1;
 	}
 }
 
@@ -80,4 +79,6 @@ function restartGame() {
 	document.getElementById("nine").innerHTML = "";
 	document.getElementById("lightBox").style.display = "none";
 	document.getElementById("winScreen").style.display = "none";
+	playerTurn = 1;
+	totalTurns = 0;
 }
